@@ -18,7 +18,7 @@ const apis = [
     endpoints: 2,
   },
   {
-    title: "Product API",
+    title: "Product API (not ready)",
     description:
       "Ümumi məhsul idarəetməsi və kataloq API-si. Inventar izləmə, kateqoriya idarəetməsi və axtarış funksiyaları.",
     link: "/api/product",
@@ -26,7 +26,7 @@ const apis = [
     endpoints: 15,
   },
   {
-    title: "E-commerce API",
+    title: "E-commerce API (not ready)",
     description:
       "Tam e-ticarət həlli üçün API kolleksiyası. Səbət idarəetməsi, checkout prosesi və ödəniş inteqrasiyası.",
     link: "/api/ecommerce",
@@ -34,21 +34,21 @@ const apis = [
     endpoints: 25,
   },
   {
-    title: "User API",
+    title: "User API (not ready)",
     description: "İstifadəçi idarəetməsi və autentifikasiya API-si. JWT token, profil idarəetməsi və icazə sistemi.",
     link: "/api/user",
     icon: <Users className="h-6 w-6 text-white" />,
     endpoints: 10,
   },
   {
-    title: "Order API",
+    title: "Order API (not ready)",
     description: "Sifariş idarəetməsi və izləmə API-si. Real-time status yeniləmələri və sifariş tarixçəsi.",
     link: "/api/order",
     icon: <FileText className="h-6 w-6 text-white" />,
     endpoints: 18,
   },
   {
-    title: "Restaurant API",
+    title: "Restaurant API (not ready)",
     description:
       "Restoran və menyu idarəetməsi API-si. Restoran profili, menyu yeniləmələri və əlçatanlıq idarəetməsi.",
     link: "/api/restaurant",
@@ -56,14 +56,14 @@ const apis = [
     endpoints: 14,
   },
   {
-    title: "Payment API",
+    title: "Payment API (not ready)",
     description: "Ödəniş emalı və maliyyə əməliyyatları API-si. Təhlükəsiz ödəniş prosesi və maliyyə hesabatları.",
     link: "/api/payment",
     icon: <CreditCard className="h-6 w-6 text-white" />,
     endpoints: 8,
   },
   {
-    title: "Review API",
+    title: "Review API (not ready)",
     description: "Rəy və reytinq sistemi API-si. İstifadəçi rəyləri, reytinq hesablaması və moderasiya alətləri.",
     link: "/api/review",
     icon: <Star className="h-6 w-6 text-white" />,
