@@ -14,6 +14,7 @@ export const HoverEffect = ({
   items: {
     title: string
     description: string
+    status: boolean
     link: string
     icon: React.ReactNode
     endpoints: number
@@ -53,7 +54,7 @@ export const HoverEffect = ({
             <div className="flex items-center justify-between mb-4">
               <div className="p-3 rounded-lg bg-blue-600 dark:bg-blue-500">{item.icon}</div>
               <span className="text-xs bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 px-2 py-1 rounded-full">
-                {item.endpoints} endpoints
+                {item.status ? item.endpoints : 0} endpoints
               </span>
             </div>
             <CardTitle>{item.title}</CardTitle>

@@ -15,6 +15,7 @@ const apis = [
       "Pizza məhsulları üçün Mock API kolleksiyası.",
     link: "/api/pizza",
     icon: <Pizza className="h-6 w-6 text-white" />,
+    status: true,
     endpoints: 2,
   },
   {
@@ -23,6 +24,7 @@ const apis = [
       "Ümumi məhsul idarəetməsi və kataloq API-si. Inventar izləmə, kateqoriya idarəetməsi və axtarış funksiyaları.",
     link: "/api/product",
     icon: <Package className="h-6 w-6 text-white" />,
+    status: false,
     endpoints: 15,
   },
   {
@@ -31,6 +33,7 @@ const apis = [
       "Tam e-ticarət həlli üçün API kolleksiyası. Səbət idarəetməsi, checkout prosesi və ödəniş inteqrasiyası.",
     link: "/api/ecommerce",
     icon: <ShoppingCart className="h-6 w-6 text-white" />,
+    status: false,
     endpoints: 25,
   },
   {
@@ -38,6 +41,7 @@ const apis = [
     description: "İstifadəçi idarəetməsi və autentifikasiya API-si. JWT token, profil idarəetməsi və icazə sistemi.",
     link: "/api/user",
     icon: <Users className="h-6 w-6 text-white" />,
+    status: false,
     endpoints: 10,
   },
   {
@@ -45,6 +49,7 @@ const apis = [
     description: "Sifariş idarəetməsi və izləmə API-si. Real-time status yeniləmələri və sifariş tarixçəsi.",
     link: "/api/order",
     icon: <FileText className="h-6 w-6 text-white" />,
+    status: false,
     endpoints: 18,
   },
   {
@@ -53,6 +58,7 @@ const apis = [
       "Restoran və menyu idarəetməsi API-si. Restoran profili, menyu yeniləmələri və əlçatanlıq idarəetməsi.",
     link: "/api/restaurant",
     icon: <Store className="h-6 w-6 text-white" />,
+    status: false,
     endpoints: 14,
   },
   {
@@ -60,6 +66,7 @@ const apis = [
     description: "Ödəniş emalı və maliyyə əməliyyatları API-si. Təhlükəsiz ödəniş prosesi və maliyyə hesabatları.",
     link: "/api/payment",
     icon: <CreditCard className="h-6 w-6 text-white" />,
+    status: false,
     endpoints: 8,
   },
   {
@@ -67,6 +74,7 @@ const apis = [
     description: "Rəy və reytinq sistemi API-si. İstifadəçi rəyləri, reytinq hesablaması və moderasiya alətləri.",
     link: "/api/review",
     icon: <Star className="h-6 w-6 text-white" />,
+    status: false,
     endpoints: 6,
   },
 ]
@@ -85,7 +93,7 @@ export default function HomePage() {
         <div className="relative z-20 max-w-7xl mx-auto px-6">
           <div className="mt-20 text-center">
             <div className="bg-white/[0.8] dark:bg-black/[0.8] backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto border border-neutral-200 dark:border-white/[0.2]">
-          
+
               <TextGenerateEffect
                 words="Elcan Əliyev"
                 className="text-4xl font-bold text-center text-black dark:text-white mb-2"
