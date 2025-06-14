@@ -10,7 +10,7 @@ import { Pizza, Package, ShoppingCart, Users, FileText, Store, CreditCard, Star,
 
 const apis = [
   {
-    title: "Pizza API",
+    title: "Pizza API (ready)",
     description:
       "Pizza məhsulları üçün Mock API kolleksiyası.",
     link: "/api/pizza",
