@@ -28,7 +28,7 @@ const apis = [
   {
     title: "E-commerce API",
     description:
-      "Tam e-ticarət həlli üçün API koleksiyası. Səbət idarəetməsi, checkout prosesi və ödəniş inteqrasiyası.",
+      "Tam e-ticarət həlli üçün API kolleksiyası. Səbət idarəetməsi, checkout prosesi və ödəniş inteqrasiyası.",
     link: "/api/ecommerce",
     icon: <ShoppingCart className="h-6 w-6 text-white" />,
     endpoints: 25,
@@ -91,7 +91,7 @@ export default function HomePage() {
                 className="text-4xl font-bold text-center text-black dark:text-white mb-2"
               />
               <TextGenerateEffect
-                words="Backend development üçün hazır API koleksiyaları. Hər birinin nümunə kodları mövcuddur."
+                words="Backend development üçün hazır API kolleksiyaları. Hər birinin nümunə kodları mövcuddur."
                 className="text-xl text-center text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto mb-12"
               />
               <div className="flex flex-wrap justify-center gap-3">
