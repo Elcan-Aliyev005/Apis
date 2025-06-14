@@ -12,10 +12,10 @@ const apis = [
   {
     title: "Pizza API",
     description:
-      "Pizza məhsulları, kateqoriyalar və sifarişlər üçün tam API koleksiyası. Menyu idarəetməsi və real-time sifariş izləmə.",
+      "Pizza məhsulları üçün Mock API koleksiyası.",
     link: "/api/pizza",
     icon: <Pizza className="h-6 w-6 text-white" />,
-    endpoints: 12,
+    endpoints: 2,
   },
   {
     title: "Product API",

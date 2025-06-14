@@ -8,47 +8,83 @@ import { ArrowLeft, Copy, Play } from "lucide-react"
 const apiData = {
   pizza: {
     name: "Pizza API",
-    description: "Pizza məhsulları, kateqoriyalar və sifarişlər üçün tam API",
-    baseUrl: "https://api.example.com/v1/pizza",
+    description: "Pizzalar üçün API",
+    baseUrl: "https://elcan-aliyev-api-collection.up.railway.app/api",
     endpoints: [
       {
         method: "GET",
         path: "/pizzas",
         description: "Bütün pizza məhsullarını əldə et",
-        response: `{
+        response: 
+`{
   "pizzas": [
-    {
-      "id": 1,
-      "name": "Margherita",
-      "price": 12.99,
-      "ingredients": ["tomato", "mozzarella", "basil"],
-      "size": "medium"
-    }
-  ]
-}`,
-      },
-      {
-        method: "POST",
-        path: "/pizzas",
-        description: "Yeni pizza əlavə et",
-        response: `{
-  "id": 2,
-  "name": "Pepperoni",
-  "price": 15.99,
-  "created_at": "2024-01-15T10:30:00Z"
+              {
+                "_id": "684cbcb35633701d52b64f79",
+                "name": "Çiken Ranç",
+                "description": "Ranç Sousu, Qril Toyuğu, Pomidor, Mozzarella",
+                "image": "https://order.papajohns.az/images/menu/PJ%20Azerbaijan/336x224_a875457644d14093cd4bc0a47f647576.jpg",
+                "sizes": [
+                           {
+                             "size": "mini",
+                             "diameter": 17,
+                             "price": 6,
+                           }
+                         ]
+               },
+               {
+                 "_id": "684cbcb35633701d52b64f7e",
+                 "name": "Marqarita",
+                 "description": "Pizza sousu, Ekstra Mozzarella, Pomidor, Oreqano",
+                 "image": "https://order.papajohns.az/images/menu/PJ%20Azerbaijan/336x224_f8da8b4b68e91c8a697aed2baf03f041.jpg",
+                 "sizes": [
+                            {
+                              "size": "orta",
+                              "diameter": 30,
+                              "price": 10,
+                            },
+                            {
+                              "size": "boyuk",
+                              "diameter": 35,
+                              "price": 12,
+                            }
+                          ]
+                },
+                {...},
+                {...}
+             ]
+
 }`,
       },
       {
         method: "GET",
-        path: "/pizzas/{id}",
+        path: "/pizzas/{_id}",
         description: "Müəyyən pizza məlumatlarını əldə et",
-        response: `{
-  "id": 1,
-  "name": "Margherita",
-  "price": 12.99,
-  "ingredients": ["tomato", "mozzarella", "basil"]
-}`,
+        response: 
+        `{
+  "_id": "684cbcb35633701d52b64f79",
+  "name": "Çiken Ranç",
+  "description": "Ranç Sousu, Qril Toyuğu, Pomidor, Mozzarella",
+  "image": "https://order.papajohns.az/images/menu/PJ%20Azerbaijan/336x224_a875457644d14093cd4bc0a47f647576.jpg",
+  "sizes": [
+             {
+               "size": "mini",
+               "diameter": 17,
+               "price": 6,
+             }
+           ]
+},`,
       },
+//             {
+//         method: "POST",
+//         path: "/pizzas",
+//         description: "Yeni pizza əlavə et",
+//         response: `{
+//   "id": 2,
+//   "name": "Pepperoni",
+//   "price": 15.99,
+//   "created_at": "2024-01-15T10:30:00Z"
+// }`,
+//       },
     ],
   },
   product: {
@@ -365,15 +401,15 @@ export default function ApiCollectionPage({ params }: { params: { slug: string }
                     </code>
                   </div>
                   <div className="flex gap-2">
-                    <Button
+                    {/* <Button
                       size="sm"
                       variant="outline"
                       className="border-gray-300 dark:border-neutral-700 text-gray-700 dark:text-neutral-300 hover:bg-gray-100 dark:hover:bg-neutral-800"
                     >
                       <Copy className="h-4 w-4 mr-1" />
                       Kopyala
-                    </Button>
-                    
+                    </Button> */}
+
                   </div>
                 </div>
                 <CardDescription className="text-base text-gray-600 dark:text-neutral-300">
@@ -395,13 +431,15 @@ export default function ApiCollectionPage({ params }: { params: { slug: string }
         <div className="mt-12 bg-gray-50 dark:bg-neutral-900 rounded-lg border border-gray-200 dark:border-neutral-800 p-8">
           <h2 className="text-2xl font-semibold text-black dark:text-white mb-4">Autentifikasiya</h2>
           <p className="text-gray-600 dark:text-neutral-300 mb-4">
-            Bu API-dən istifadə etmək üçün Bearer token ilə autentifikasiya tələb olunur.
+            {/* Bu API-dən istifadə etmək üçün Bearer token ilə autentifikasiya tələb olunur. */}
+            Bu API-dən istifadə etmək üçün Bearer token ilə autentifikasiya tələb olunmur.
           </p>
-          <div className="bg-gray-900 dark:bg-black rounded-lg p-4 border border-gray-300 dark:border-neutral-800">
+          {/* <div className="bg-gray-900 dark:bg-black rounded-lg p-4 border border-gray-300 dark:border-neutral-800">
             <code className="text-sm font-mono text-green-400">Authorization: Bearer YOUR_API_TOKEN</code>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
   )
 }
+
